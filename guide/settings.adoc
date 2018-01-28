@@ -1,0 +1,22 @@
+//
+:revision: 0.1.0
+:release: yyyy.mm.dd
+
+
+// Folders
+:rules-dir: /tmp/rules
+
+// Difi
+:link-github: https://github.com/difi/vefa-ehf-getevidence
+:link-issues: https://github.com/difi/vefa-ehf-getevidence/issues
+:link-portal: https://vefa.difi.no/
+
+:name-difi-en: Agency of Public Management and eGovernment
+:name-difi-no: Direktoratet for forvaltning og IKT
+
+// External
+:link-cen-bii: http://www.cenbii.eu/
+:link-oasis-ubl: http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl
+:link-oasis-ubl: http://docs.oasis-open.org/ubl/UBL-2.1.html
+:link-oasis-ubl-21-resources: http://docs.oasis-open.org/ubl/os-UBL-2.1/
+:link-oasis-ubl-21-xsd: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/
