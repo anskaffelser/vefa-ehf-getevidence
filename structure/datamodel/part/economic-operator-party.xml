@@ -45,7 +45,7 @@
                 <Term>cbc:ID</Term>
                 <Name>Economic operator identifier</Name>
 
-                <Reference type="RULE">EHF-ESPD-R022</Reference>
+                <!-- <Reference type="RULE">EHF-ESPD-R022</Reference> -->
 
                 <Attribute>
                     <Term>schemeID</Term>

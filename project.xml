@@ -4,7 +4,6 @@
     <Name>EHF Get Evidence 0.1</Name>
 
     <Documentation path="ehf/">EHF Get Evidence documentation</Documentation>
-   
 
     <!-- Data models -->
 
@@ -13,123 +12,32 @@
         <Path>structure/datamodel/get-evidence-request.xml</Path>
         <Title>Get Evidence request</Title>
     </Resource>
-<!--    <Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/datamodel/espd-response.xml</Path>
-        <Title>ESPD Response</Title>
-    </Resource>-->
-
-    <!-- Rules -->
-
-    <Resource>
-        <Identifier>common</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/sch/parts/common.sch</Path>
-        <Title>Common rules</Title>
-    </Resource>
-    <Resource>
-        <Identifier>empty-elements</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/sch/parts/empty-elements.sch</Path>
-        <Title>Empty elements</Title>
-    </Resource>
-    <Resource>
-        <Type>Rule-1</Type>
-        <Path>target/generated/CriteriaTaxonomy.xml</Path>
-    </Resource>
 
     <!-- Code lists -->
 
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ActivityTypeCode.xml</Path>
-    </Resource> -->
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/DocRefContentType.xml</Path>
-    </Resource>
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/AmountTypeCodes.xml</Path>
-    </Resource> -->
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ContractType.xml</Path>
-    </Resource> -->
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/CountryCodeIdentifier.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/CriterionJurisdictionLevel.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/CriteriaTypeCode.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/CurrencyCode.xml</Path>
-    </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ICD.xml</Path>
     </Resource>
+
+    <!-- Namespace -->
+
     <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/LanguageCodeEU.xml</Path>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/cac.xml</Path>
     </Resource>
     <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/PeriodMeasureTypeCodes.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ProfileID.xml</Path>
-    </Resource>
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ProcedureType.xml</Path>
-    </Resource> -->
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ProfileExecutionID.xml</Path>
-    </Resource> -->
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ResponseDataType.xml</Path>
-    </Resource>
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/TechnicalCapabilityTypeCode.xml</Path>
-    </Resource> -->
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/TendererRole.xml</Path>
-    </Resource> -->
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/EconomicOperatorIdentifierType.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNECERec20-11e.xml</Path>
+        <Type>Namespace-1</Type>
+        <Path>structure/namespace/cbc.xml</Path>
     </Resource>
 
     <!-- Files -->
+
     <Resource>
         <Type>native:File</Type>
         <Path>rules/example/example-get-evidence-request.xml</Path>
         <Title>Example file for Get Evidence Request</Title>
         <Property key="download">example-get-evidence-request.xml</Property>
     </Resource>
-   <!-- <Resource>
-        <Type>native:File</Type>
-        <Path>rules/example/example-espd-response.xml</Path>
-        <Title>Example file for EHF ESPD 1.0 Response</Title>
-        <Property key="download">example-espd-response.xml</Property>
-    </Resource>-->
-   
-   
+
 </Project>

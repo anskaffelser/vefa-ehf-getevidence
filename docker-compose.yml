@@ -1,0 +1,49 @@
+version: '2'
+services:
+
+  asciidoctor:
+    image: "difi/asciidoctor"
+    volumes:
+     - .:/documents
+     - ./target:/target
+
+  schematron-request:
+    image: "klakegg/schematron"
+    command: prepare rules/sch/EHF-ESPD-REQUEST.sch /target/EHF-ESPD-REQUEST.sch
+    volumes:
+     - .:/src
+     - ./target/site/files:/target
+
+#  schematron-response:
+#    image: "klakegg/schematron"
+#    command: prepare rules/sch/EHF-ESPD-RESPONSE.sch /target/EHF-ESPD-RESPONSE.sch
+#    volumes:
+#     - .:/src
+#     - ./target/site/files:/target
+
+  structure:
+    image: "difi/vefa-structure:0.5"
+    volumes:
+     - .:/src
+     - ./target:/target
+
+  validator:
+    image: "difi/vefa-validator"
+    command: build -x -t /src -t -target target/validator -n no.difi.ehf.espd
+    volumes:
+     - .:/src
+
+  target-rm:
+    image: "alpine:3.6"
+    command: sh -c 'if [ -e /src/target ]; then rm -rf /src/target/*; fi'
+    volumes:
+     - .:/src
+
+  serve:
+    image: "python:3-alpine"
+    command: python3 -m http.server 8000 -b 0.0.0.0
+    volumes:
+     - .:/src
+    ports:
+     - "8000:8000"
+    working_dir: /src/target
