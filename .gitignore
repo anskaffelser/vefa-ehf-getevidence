@@ -8,3 +8,5 @@ target
 *.epub
 tmp*
 .idea
+
+*.db
