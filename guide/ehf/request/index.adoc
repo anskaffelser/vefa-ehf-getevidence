@@ -3,7 +3,7 @@
 
 
 .Information model of the EHF GetEvidenceRequest message
-image::images/request-model.png[align="center"]
+image::images/request-model.png[align="left"]
 
 As seen in the model, one request document can only handle requests for one Economic Operator, but for this one economic operator, several different evidences can be requested.
 
