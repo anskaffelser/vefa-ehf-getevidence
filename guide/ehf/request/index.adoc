@@ -2,8 +2,20 @@
 = Get Evidence Request
 
 
-Below is an information model of the EHF GetEvidenceRequest message
-
+.Information model of the EHF GetEvidenceRequest message
 image::images/request-model.png[align="center"]
 
 As seen in the model, one request document can only handle requests for one Economic Operator, but for this one economic operator, several different evidences can be requested.
+
+Detailed descriptions, use of code lists, attributes, fixed values etc. are found in the {link-request-structure}
+
+
+== Remarks
+
+Responder:: Should this be fixed values to Altinn?
+
+Evidence type code:: Code list for the different types of evidences should be specified, no code list is enforced at this stage.
+
+Level of confidentiality:: Subset of code list from HL7 is used. U=Unrestricted, R=Restricted. If any of the evidences has level of confidentiality = 'R', the Document URI must be provided. Schematron to enforce this is not created yet.
+
+Evidence issuing party:: Website for the evidence issuer is provided as only information. Suggest to use codes/fixed values to identify the issuing party.

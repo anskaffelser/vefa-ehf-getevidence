@@ -3,10 +3,10 @@
  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
  xmlns="urn:fdc:difi.no:2018:vefa:getevidence:Request-1">
-    <cbc:CustomizationID>CustomizationID0</cbc:CustomizationID>
-    <cbc:ProfileID>ProfileID0</cbc:ProfileID>
-    <cbc:ID>ID0</cbc:ID>
-    <cbc:IssueDate>2006-05-04</cbc:IssueDate>
+    <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:getevidence:1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:01:1.0</cbc:ProfileID>
+    <cbc:ID>6107bf68-e929-4d4e-9c8e-c93efdfb1b90</cbc:ID>
+    <cbc:IssueDate>2018-01-30</cbc:IssueDate>
     <cac:RequestorParty>
         <cbc:EndpointID schemeID="NO:ORGNR">991825827</cbc:EndpointID>
         <cac:PartyIdentification>
