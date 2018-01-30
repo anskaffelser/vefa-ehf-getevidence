@@ -14,7 +14,7 @@
 
     
     <Document>
-        <Term>req:Get Evidence Request</Term>
+        <Term>req:GetEvidenceRequest</Term>
         <Name>EHF Get Evidence Request document</Name>
         
         
@@ -72,7 +72,7 @@
        <Element>
            <Term>cbc:URI</Term>
            <Name>Document URI</Name>
-           <Description>Relative URI to the attached ESPD document. Mandatory if the evidence requested is not open data.</Description>
+           <Description>Relative URI to the attached ESPD document. Mandatory if the evidence requested is restricted.</Description>
            <Value type="EXAMPLE">DOCUMENTS/file1.xml</Value>
        </Element>
        
