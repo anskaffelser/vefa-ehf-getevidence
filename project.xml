@@ -19,6 +19,11 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/ICD.xml</Path>
     </Resource>
+    
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ConfidentialityLevel.xml</Path>
+    </Resource>
 
     <!-- Namespace -->
 
@@ -38,6 +43,13 @@
         <Path>rules/example/example-get-evidence-request.xml</Path>
         <Title>Example file for Get Evidence Request</Title>
         <Property key="download">example-get-evidence-request.xml</Property>
+    </Resource>
+    
+    <Resource>
+        <Type>native:File</Type>
+        <Path>xsd/GetEvidenceRequest.xsd</Path>
+        <Title>XML Schema for Get Evidence Request</Title>
+        <Property key="download">GetEvidenceRequest.xsd</Property>
     </Resource>
 
 </Project>
