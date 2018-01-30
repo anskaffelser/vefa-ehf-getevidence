@@ -1,0 +1,9 @@
+
+= Get Evidence Request
+
+
+Below is an information model of the EHF GetEvidenceRequest message
+
+image::images/request-model.png[align="center"]
+
+As seen in the model, one request document can only handle requests for one Economic Operator, but for this one economic operator, several different evidences can be requested.

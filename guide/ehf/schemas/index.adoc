@@ -1,0 +1,8 @@
+
+= Schemas
+
+The schemas to be used are
+
+
+* link:../../xsd/GetEvidenceRequest.xsd[GetEvidenceRequest.xsd]
+* link:../../xsd/GetEvidenceResponse.xsd[Not finalized yet]

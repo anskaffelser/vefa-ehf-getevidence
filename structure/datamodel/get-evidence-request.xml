@@ -8,41 +8,23 @@
     <Property key="sch:prefix">EHF-GetEvidence-REQ</Property>
     <Property key="sch:identifier">getevidence-basic</Property>
     
-    <Namespace prefix="vcd-req">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2</Namespace>
+    <Namespace prefix="req">urn:fdc:difi.no:2018:vefa:getevidence:Request-1</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
-    <Namespace prefix="ext">urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2</Namespace>
-    <Namespace prefix="ccts">urn:un:unece:uncefact:documentation:2</Namespace>
+
     
     <Document>
-        <Term>vcd-req:Get Evidence Request</Term>
+        <Term>req:Get Evidence Request</Term>
         <Name>EHF Get Evidence Request document</Name>
         
         
-        <Element cardinality="0..1">
-            <Term>cbc:UBLVersionID</Term>
-            <Name>UBL Version Identifier</Name>
-            <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance.</Description>
-            
-            <Attribute>
-                <Term>schemeAgencyID</Term>
-                <Value type="FIXED">OASIS-UBL-TC</Value>
-            </Attribute>
-            
-            <Value type="FIXED">2.2</Value>
-        </Element>
         
-        <Element cardinality="0..1">
+        <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Customization Identifier</Name>
             <Description>Identifies a user-defined customization of UBL for a specific use.</Description>
             
-            <Attribute>
-                <Term>schemeAgencyID</Term>
-                <Value type="FIXED">BII</Value>
-            </Attribute>
-            
-            <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrns091:ver3.0:extended:urn:fdc:difi.no:2017:ehf:spec:1.0</Value>
+            <Value type="FIXED">urn:fdc:difi.no:2017:ehf:spec:1.0</Value>
         </Element>
         
         <Element cardinality="0..1">
@@ -57,32 +39,7 @@
             <Name>Document identifier</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. The identification may include the version of the specification as well as any customizations applied. Use UUID (universally unique identifier), version 4</Description>
             
-            <Attribute>
-                <Term>schemeID</Term>
-                <Value type="FIXED">ISO/IEC 9834-8:2008 - 4UUID</Value>
-            </Attribute>
-            
-            <Attribute>
-                <Term>schemeAgencyID</Term>
-                <Value type="FIXED">EU-COM-GROW</Value>
-            </Attribute>
-            
             <Value type="EXAMPLE">8a6e9c28-628d-4e64-8a1a-367c8973ff2a</Value>
-        </Element>
-        
-        <Element cardinality="0..1">
-            <Term>cbc:CopyIndicator</Term>
-            <Name>Copy indicator</Name>
-            <Description>Indicates whether this document is a copy (true) or not (false)</Description>
-            <Value type="EXAMPLE">false</Value>
-        </Element>
-        
-        <!-- Element cbc:UUID not used, UUID required in the ID element-->
-        
-        <Element>
-            <Term>cbc:ContractFolderID</Term>
-            <Name>Contract Folder Identifier</Name>
-            <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier. A reference to the procurement procedure to which a Qualification request document and the delivered response documents are associated.</Description>
         </Element>
  
         <Element>
@@ -92,94 +49,67 @@
             <Value type="EXAMPLE">2017-12-26</Value>
         </Element>
         
-        <Element cardinality="0..1">
-            <Term>cbc:IssueTime</Term>
-            <Name>Issue time</Name>
-            <Description>The time, assigned by the sender, at which this document was issued.</Description>
-            <Value type="EXAMPLE">08:16:09</Value>
-        </Element>
-     
-        <Element cardinality="0..1">
-            <Term>cbc:Note</Term>
-            <Name>Note</Name>
-            <Description>Free-form text pertinent to this document, conveying information that is not contained explicitly in other structures.</Description>
-        </Element>
-      
-        <Include>part/contracting-party.xml</Include>
+        <Include>part/requestor-party.xml</Include>
+        <Include>part/responder-party.xml</Include>
         
-        <Include>part/economic-operator-party.xml</Include>
-
-        <Element cardinality="0..n">
-            <Term>cac:TenderingCriterion</Term>
-            <Name>Tendering Criterion</Name>
-            <Description>A criterion supporting Tenderer qualifications.</Description>
-            
-            <Element cardinality="0..1">
-                <Term>cbc:ID</Term>
-                <Name>Identifier</Name>
-                <Description>An identifier for this item of criterion support.</Description>
-            </Element>
-            <Element cardinality="1..n">
-                <Term>cac:TenderingCriterionPropertyGroup</Term>
-                <Name>Tendering Criterion Property Group</Name>
-                <Description>The sets of properties that can be used to fulfil the tendering criterion.</Description>
-                <Element cardinality="0..1">
-                    <Term>cbc:ID</Term>
-                    <Name>Identifier</Name>
-                    <Description>An identifier for the group of criteria.</Description>
-                </Element>
-              <Element cardinality="1..n">
-                    <Term>cac:TenderingCriterionProperty</Term>
-                    <Name>Tendering Criterion Property</Name>
-                    <Description>All the criteria properties comprising the tendering criterion.</Description>
-                    <Element cardinality="0..1">
-                        <Term>cbc:ID</Term>
-                        <Name>Identifier</Name>
-                        <Description>An identifier to refer to the criterion property.</Description>
-                    </Element>
-             
-                    <Element cardinality="0..n">
-                        <Term>cac:TemplateEvidence</Term>
-                        <Name>Evidence</Name>
-                        <Description>An evidence that can be used to meet this criterion property.</Description>
-                        <Element cardinality="0..1">
-                            <Term>cbc:ID</Term>
-                            <Name>Identifier</Name>
-                            <Description>An identifier to refer to the evidence.</Description>
-                        </Element>
-                        <Element cardinality="0..1">
-                            <Term>cbc:Name</Term>
-                            <Name>Evidence name</Name>
-                            <Description>The name of the evidence.</Description>
-                        </Element>
-                        <Element cardinality="0..1">
-                            <Term>cac:EvidenceIssuingParty</Term>
-                            <Name>Evidence Issuing Party</Name>
-                            <Description>The party issuing the evidence.</Description>
-                        
-                        <Element cardinality="0..1">
-                            <Term>cbc:WebsiteURI</Term>
-                            <Name>Evidence URI</Name>
-                            <Description>he Uniform Resource Identifier (URI) that identifies this party's web site; i.e., the web site's Uniform Resource Locator (URL)</Description>
-                        </Element>
-                        </Element>
-                       
-                    </Element>
-                </Element>
-<!--                <Element cardinality="0..n">
-                    <Term>cac:SubsidiaryTenderingCriterionPropertyGroup</Term>
-                    <Name>Tendering Criterion Property Group</Name>
-                    <Description>Subsidiary tendering criteria groups comprising this tendering criterion.</Description>
-                    <Property key="recursive">../</Property>
-                </Element>-->
-            </Element>
-            
-        </Element>
-   
-   
-        <Include>part/additional-document-ref.xml</Include>
- 
-        
+   <Element>
+       <Term>req:Request</Term>
+       <Name>Request information</Name>
+       <Description>Information on the economic operator and the evidence requested for this operator</Description>
+       
+       <Element>
+           <Term>cac:PartyIdentification</Term>
+           <Name>Party identification</Name>
+           <Element>
+               <Term>cbc:ID</Term>
+               <Name>Evidence Party identifier</Name>
+               <Description>Valid organizational number for the party whom the evidence is requested</Description>
+               <Value type="EXAMPLE">987654321</Value>
+           </Element>
+           
+       </Element>
+       
+       <Element>
+           <Term>cbc:URI</Term>
+           <Name>Document URI</Name>
+           <Description>Relative URI to the attached ESPD document. Mandatory if the evidence requested is not open data.</Description>
+           <Value type="EXAMPLE">DOCUMENTS/file1.xml</Value>
+       </Element>
+       
+       <Element>
+           <Term>cac:Evidence</Term>
+           <Name>Evidences requested</Name>
+           <Description>The evidence(s) requested for a party</Description>
+           
+           <Element>
+               <Term>cbc:EvidenceTypeCode</Term>
+               <Name>Evidence type code</Name>
+               <Description>The type of evidence requested</Description>
+               <Value type="EXAMPLE">Skatteattest</Value>
+           </Element>
+           <Element>
+               <Term>cbc:ConfidentialityLevelCode</Term>
+               <Name>Level of confidentiality</Name>
+               <Description>Indicates if the requested evidence is restricted (R) or not (U)</Description>
+               <Reference type="CODE_LIST">ConfidentialityLevel</Reference>
+               <Value type="EXAMPLE">false</Value>
+           </Element>
+           
+           <Element>
+               <Term>cac:EvidenceIssuingParty</Term>
+               <Name>Evidence issuing party</Name>
+               <Element>
+                   <Term>cbc:WebsiteURI</Term>
+                   <Name>Webiste URI</Name>
+                   <Description>The issuing party for the evidence</Description>
+                   <Value type="EXAMPLE">https://www.skatteetaten.no</Value>
+               </Element>
+               
+           </Element>
+         
+       </Element>
+       
+   </Element> 
         
     </Document>
 </Structure>

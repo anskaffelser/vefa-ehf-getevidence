@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="urn:fdc:difi.no:2018:vefa:getevidence:Request-1"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urn:fdc:difi.no:2018:vefa:getevidence:Request-1"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+
+	<!-- ===== Imports ===== -->
+	<xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		schemaLocation="../common/UBL-CommonAggregateComponents-2.2.xsd"/>
+	<xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+		schemaLocation="../common/UBL-CommonBasicComponents-2.2.xsd"/>
+
+	
+	<xsd:element name="GetEvidenceRequest" type="GetEvidenceRequestType"/>
+	
+	<xsd:complexType name="GetEvidenceRequestType">
+		<xsd:sequence>
+			<xsd:element ref="cbc:CustomizationID" >
+				<xsd:annotation>
+					<xsd:documentation>
+						Identification of the EHF Get Evidence Reqeust</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="cbc:ProfileID">
+				<xsd:annotation>
+					<xsd:documentation>Identification for the profile</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="cbc:ID">
+				<xsd:annotation>
+					<xsd:documentation>Document identifier, use UUID, version 4</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="cbc:IssueDate">
+				<xsd:annotation>
+					<xsd:documentation>Document issue date, use format YYYY-MM-DD</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		
+			<xsd:element ref="cac:RequestorParty"/>
+			<xsd:element ref="cac:ResponderParty"/>
+			<xsd:element name="Request" type="RequestType"/>
+			
+		</xsd:sequence>
+	</xsd:complexType>
+	
+
+	<xsd:complexType name="RequestType">
+		<xsd:annotation>
+			<xsd:documentation>Party for whom the evidence is requested</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="cac:PartyIdentification">
+				<xsd:annotation>
+					<xsd:documentation>The identifier for this party, must be a valid organisational number</xsd:documentation>
+				</xsd:annotation>
+				
+			</xsd:element>
+			<xsd:element ref="cbc:URI" minOccurs="0" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>Relative URI to the attached ESPD document. Mandatory if the evidence requested is not open data.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element ref="cac:Evidence" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

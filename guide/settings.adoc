@@ -16,7 +16,7 @@
 
 // External
 :link-cen-bii: http://www.cenbii.eu/
-:link-oasis-ubl: http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl
-:link-oasis-ubl: http://docs.oasis-open.org/ubl/UBL-2.1.html
-:link-oasis-ubl-21-resources: http://docs.oasis-open.org/ubl/os-UBL-2.1/
-:link-oasis-ubl-21-xsd: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/
+:link-espd: https://espd.github.io/ESPD-EDM/v2.0.0/xml_guide.html[ESPD 2.x]
+:link-oasis-ubl: http://docs.oasis-open.org/ubl/csprd02-UBL-2.2/UBL-2.2.html
+:link-request-xsd: ../../xsd
+:link-response-xsd: ../../xsd

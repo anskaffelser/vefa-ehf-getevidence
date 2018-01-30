@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetEvidenceRequest 
+ xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+ xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+ xmlns="urn:fdc:difi.no:2018:vefa:getevidence:Request-1">
+    <cbc:CustomizationID>CustomizationID0</cbc:CustomizationID>
+    <cbc:ProfileID>ProfileID0</cbc:ProfileID>
+    <cbc:ID>ID0</cbc:ID>
+    <cbc:IssueDate>2006-05-04</cbc:IssueDate>
+    <cac:RequestorParty>
+        <cbc:EndpointID schemeID="NO:ORGNR">991825827</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="NO:ORGNR">991825827</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Difi</cbc:Name>
+        </cac:PartyName>
+    </cac:RequestorParty>
+    <cac:ResponderParty>
+        <cbc:EndpointID schemeID="NO:ORGNR">999888777</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="NO:ORGNR">999888777</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Altinn</cbc:Name>
+        </cac:PartyName>
+    </cac:ResponderParty>
+   <Request>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="NO:ORGNR">990399123</cbc:ID>
+        </cac:PartyIdentification>
+       <cbc:URI>DOCUMENT/file1.xml</cbc:URI>
+        <cac:Evidence>
+            <cbc:EvidenceTypeCode>Skatteattest</cbc:EvidenceTypeCode>
+            <cbc:ConfidentialityLevelCode>R</cbc:ConfidentialityLevelCode>
+            <cac:EvidenceIssuingParty>
+                <cbc:WebsiteURI>www.skatt.no</cbc:WebsiteURI>              
+            </cac:EvidenceIssuingParty>
+        </cac:Evidence>
+       <cac:Evidence>
+           <cbc:EvidenceTypeCode>Enhetsregisteret</cbc:EvidenceTypeCode>
+           <cbc:ConfidentialityLevelCode>U</cbc:ConfidentialityLevelCode>
+           <cac:EvidenceIssuingParty>
+               <cbc:WebsiteURI>www.brreg.no</cbc:WebsiteURI>
+           </cac:EvidenceIssuingParty>
+       </cac:Evidence>      
+    </Request>
+</GetEvidenceRequest>

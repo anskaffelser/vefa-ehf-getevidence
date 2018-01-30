@@ -1,4 +1,3 @@
 = Introduction
 
-This is the introduction to EHF Get Evidence.
-  
+The EHF Get Evidence is used by contracting authorities to request officially available evidences through Altinn. These evidences can be both open and restricted, and in the first phase it is evidences from Skatt and Brønnøysundregisters that are in scope.
