@@ -69,7 +69,7 @@
            
        </Element>
        
-       <Element>
+       <Element cardinality="0..1">
            <Term>cbc:URI</Term>
            <Name>Document URI</Name>
            <Description>Relative URI to the attached ESPD document. Mandatory if the evidence requested is restricted.</Description>
@@ -92,7 +92,7 @@
                <Name>Level of confidentiality</Name>
                <Description>Indicates if the requested evidence is restricted (R) or not (U)</Description>
                <Reference type="CODE_LIST">ConfidentialityLevel</Reference>
-               <Value type="EXAMPLE">false</Value>
+               <Value type="EXAMPLE">R</Value>
            </Element>
            
            <Element>
