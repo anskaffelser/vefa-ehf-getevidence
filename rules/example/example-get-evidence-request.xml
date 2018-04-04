@@ -31,6 +31,7 @@
         </cac:PartyIdentification>
        <cbc:URI>DOCUMENT/file1.xml</cbc:URI>
         <cac:Evidence>
+            <cbc:ID>1</cbc:ID>
             <cbc:EvidenceTypeCode>Skatteattest</cbc:EvidenceTypeCode>
             <cbc:ConfidentialityLevelCode>R</cbc:ConfidentialityLevelCode>
             <cac:EvidenceIssuingParty>
@@ -38,6 +39,7 @@
             </cac:EvidenceIssuingParty>
         </cac:Evidence>
        <cac:Evidence>
+           <cbc:ID>2</cbc:ID>
            <cbc:EvidenceTypeCode>Enhetsregisteret</cbc:EvidenceTypeCode>
            <cbc:ConfidentialityLevelCode>U</cbc:ConfidentialityLevelCode>
            <cac:EvidenceIssuingParty>

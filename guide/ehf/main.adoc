@@ -20,7 +20,10 @@ v{revision}
 :leveloffset: +1
 
 include::introduction/index.adoc[]
+
 include::request/index.adoc[]
+
+include::response/index.adoc[]
 
 
 

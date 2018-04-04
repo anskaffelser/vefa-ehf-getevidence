@@ -1,0 +1,10 @@
+
+= Get Evidence Response
+
+
+.Information model of the EHF GetEvidenceResponse message
+image::images/response-model.png[align="left"]
+
+As seen in the model, one response document can only handle responses for one Economic Operator, but for this one economic operator, several different evidences can be returned.
+
+Detailed descriptions, use of code lists, attributes, fixed values etc. are found in the {link-response-structure}
