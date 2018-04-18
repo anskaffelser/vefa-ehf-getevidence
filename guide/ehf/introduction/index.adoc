@@ -3,7 +3,7 @@
 The EHF Get Evidence is intended to be used by contracting authorities to request supporting documents, both from economic operators (EO) and official database(s). The supporting documents to be retrieved from the official database can be both unrestricted and restricted.
 
 .Sources of evidences used in public procurement
-image::images/get-evidence.png[align="left"]
+image::images/get-evidence-bpmn.png[align="left"]
 
 The scope of the first phase of this project is to request supporting documents for Norwegian EOs from the Norwegian Tax Authorities (Skatteetaten) and Brønnøysund Registry Centre (Brønnøysundregistrene).
 
