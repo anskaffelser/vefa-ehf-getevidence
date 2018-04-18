@@ -1,3 +1,11 @@
 = Introduction
 
-The EHF Get Evidence is used by contracting authorities to request officially available evidences through Altinn. These evidences can be both unrestricted and restricted, and in the first phase it is evidences from Skatteetaten and Brønnøysundregisters that are in scope.
+The EHF Get Evidence is intended to be used by contracting authorities to request supporting documents, both from economic operators and official database(s). The supporting documents to be retrieved from the official database can be both unrestricted and restricted.
+
+.Sources of evidences used in public procurement
+image::images/get-evidence.png[align="left"]
+
+In the first phase of this project it is supporting documents from Norwegian Tax Authorities (Skatteetaten) and Brønnøysund Registry Centre (Brønnøysundregistrene) that are in scope.
+
+.Process supported in first phase
+image::images/nadobe.png[align="left"]

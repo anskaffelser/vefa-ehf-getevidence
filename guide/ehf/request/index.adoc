@@ -1,10 +1,13 @@
 
-= Get Evidence Request
+= Get Evidence Request and response
 
 
-.Information model of the EHF GetEvidenceRequest message
-image::images/request-model.png[align="left"]
+.Information model of the EHF GetEvidence messages
+image::images/response-model.png[align="left"]
 
-As seen in the model, one request document can only handle requests for one Economic Operator, but for this one economic operator, several different evidences can be requested.
+As seen in the model, one request or response is for one Economic Operator, but for this one economic operator, several different supporting documents are supported. There is also a possibility that some of the supporting documents can be sent as structured information in the Response-class.
+
+
+== Preliminary syntax mapping for GetEvidenceRequest
 
 Detailed descriptions, use of code lists, attributes, fixed values etc. are found in the {link-request-structure}

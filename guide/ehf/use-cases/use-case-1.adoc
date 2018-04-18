@@ -1,0 +1,13 @@
+= Above threshold
+
+== Use case 1
+
+For tenders above the threshold, this is probably the most typical use case, where the contracting authority require the tenderer to which it has decided to award the contract, to submit up-to-date supporting documents. But, contracting authorities can not ask for supporting documents if these are available in open databases, or if the contracting authority already possesses these documents. See <<art59-5>>
+
+In this scenario, the economic operator has sent an ESPD Response as part of the tender documents, and the contracting authority need to check if it already possesses some of the supporting documents. For the rest of the supporting documents, the contracting authority is obliged to get these from open databases if such exist, and then ask the economic operator to provide the rest.
+
+= Use case 2
+
+In a restricted procedure the contracting authority requires submission of the supporting documents at the moment of selection of the candidates. See <<art59-4>> and <<note84>>.
+
+In this scenario, the contracting authority need to check if it already possesses some of the supporting documents. For the rest of the supporting documents, the contracting authority is obliged to get these from open databases if such exist, and then ask all the economic operators to provide the rest.

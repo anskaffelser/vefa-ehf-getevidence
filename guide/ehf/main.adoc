@@ -23,8 +23,8 @@ include::introduction/index.adoc[]
 
 include::request/index.adoc[]
 
-include::response/index.adoc[]
+include::use-cases/index.adoc[]
 
-
+include::remarks.adoc[]
 
 :leveloffset: -1
