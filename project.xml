@@ -13,19 +13,7 @@
         <Title>Get Evidence request</Title>
     </Resource>
 
-    <!-- Code lists -->
-
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ICD.xml</Path>
-    </Resource>
-    
-    <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/ConfidentialityLevel.xml</Path>
-    </Resource>
-
-    <!-- Namespace -->
+   
 
     <Resource>
         <Type>Namespace-1</Type>
