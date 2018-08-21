@@ -19,13 +19,13 @@
     <Resource>
         <Type>native:File</Type>
         <Path>rules/example/full-example.xml</Path>
-        <Title>Example file for Get Evidence Request, containing all elements and attributes</Title>
+        <Title>Full example file for Get Evidence Request, containing all elements and attributes</Title>
         <Property key="download">full-example.xml</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
         <Path>rules/example/minimum-example.xml</Path>
-        <Title>Example file for Get Evidence Request, containting only mandatory elements and attributes</Title>
+        <Title>Minimum example file for Get Evidence Request, containting only mandatory elements and attributes</Title>
         <Property key="download">minimum-example.xml</Property>
     </Resource>
     

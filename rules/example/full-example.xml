@@ -61,7 +61,7 @@
                 <cbc:ID>9052cc59-cfe5-41c6-a314-02a7f378ffe8</cbc:ID>
                 <cac:TemplateEvidence>
                     <cbc:ID>E1</cbc:ID>
-                    <cbc:EvidenceTypeCode>Skatteattest</cbc:EvidenceTypeCode>
+                    <cbc:EvidenceTypeCode>SKATTEATTEST</cbc:EvidenceTypeCode>
                 </cac:TemplateEvidence>
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
