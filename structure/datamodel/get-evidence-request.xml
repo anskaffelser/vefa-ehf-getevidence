@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 
-    <Term>request</Term>
+    <Term>GetEvidenceRequest</Term>
     <Name>EHF Get Evidence Request</Name>
     <Description>Document type used to request evidences.</Description>
 
@@ -43,91 +43,92 @@
                 The identification may include the version of the specification as well as any customizations applied. Use UUID (universally unique identifier), version 4</Description>
             <Value type="EXAMPLE">8a6e9c28-628d-4e64-8a1a-367c8973ff2a</Value>
         </Element>
-        
+
         <Element>
             <Term>cbc:ContractFolderID</Term>
             <Name>Ted/Doffin reference</Name>
             <Description>Ted or Doffin referense number</Description>
             <Value type="EXAMPLE">18/00001</Value>
         </Element>
-        
+
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Issue date</Name>
             <Description>The date, assigned by the sender, on which this document was issued. Must not include timezone information. Format YYYY-MM-DD</Description>
             <Value type="EXAMPLE">2017-12-26</Value>
         </Element>
-        
+
 
         <Include>part/contracting-party.xml</Include>
         <Include>part/eo-party.xml</Include>
 
-      
-   <Element>
-       <Term>cac:TenderingCriterion</Term>
-       <Name>Request information</Name>
-       <Description>Information on the evidence requested for this operator</Description>
+
+        <Element>
+            <Term>cac:TenderingCriterion</Term>
+            <Name>Request information</Name>
+            <Description>Information on the evidence requested for this operator</Description>
 
 
-       <Element>
-           <Term>cbc:ID</Term>
-           <Name>Criterion ID</Name>
-           <Description>Criterion identifier, to be referenced in the response. Use UUID from the Crtierion Taxonomy</Description>
-           <Value type="EXAMPLE">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</Value>
-       </Element>
-       
-       <Element>
-           <Term>cbc:CriterionType</Term>
-           <Name>Criterion Type</Name>
-           <Description>Criterion type code, from the Criterion Taxonomy</Description>
-           <Value type="EXAMPLE">CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</Value>
-       </Element>
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Criterion ID</Name>
+                <Description>Criterion identifier, to be referenced in the response. Use UUID from the Crtierion Taxonomy</Description>
+                <Value type="EXAMPLE">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</Value>
+            </Element>
 
-       <Element cardinality="1..n">
-           <Term>cac:TenderingCriterionPropertyGroup</Term>
-           <Name>Tendering criterion property group</Name>   
-           
-           <Element cardinality="0..1">
-               <Term>cbc:ID</Term>
-               <Name>Criteria property group id</Name>
-               <Description>Criterion group identifier, to be referenced in the response. Use UUID from the Crtierion Taxonomy</Description>
-               <Value type="EXAMPLE">098fd3cc-466e-4233-af1a-affe09471bce</Value>
-           </Element>
-           
-           <Element cardinality="1..n">
-               <Term>cac:TenderingCriterionProperty</Term>
-               <Name>Tendering criterion property</Name>
-                           
-               <Element cardinality="0..1">
-                   <Term>cbc:ID</Term>
-                   <Name>Criteria property id</Name>
-                   <Description>Criterion property identifier, to be referenced in the response. Use UUID from the Crtierion Taxonomy</Description>
-                   <Value type="EXAMPLE">9052cc59-cfe5-41c6-a314-02a7f378ffe8</Value>
-               </Element>                                          
-           </Element>
-           
-           <Element cardinality="1..n">
-               <Term>cac:TemplateEvidence</Term>
-               <Name>TemplateEvidence</Name>
-               
-               <Element>
-                   <Term>cbc:ID</Term>
-                   <Name>Evidence identifier</Name>
-                   <Value type="EXAMPLE">E1</Value>
-               </Element>   
-               
-               <Element>
-                   <Term>cbc:EvidenceTypeCode</Term>
-                   <Name>Evidence type code</Name>
-                   <Description>The type of evidence requested</Description>
-                   <Value type="EXAMPLE">Skatteattest</Value>
-               </Element>
-               
-           </Element>
-           
-       </Element>
+            <Element>
+                <Term>cbc:CriterionType</Term>
+                <Name>Criterion Type</Name>
+                <Description>Criterion type code, from the Criterion Taxonomy</Description>
+                <Value type="EXAMPLE">CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</Value>
+            </Element>
 
-   </Element>
+            <Element cardinality="1..n">
+                <Term>cac:TenderingCriterionPropertyGroup</Term>
+                <Name>Tendering criterion property group</Name>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:ID</Term>
+                    <Name>Criteria property group id</Name>
+                    <Description>Criterion group identifier, to be referenced in the response. Use UUID from the Crtierion Taxonomy</Description>
+                    <Value type="EXAMPLE">098fd3cc-466e-4233-af1a-affe09471bce</Value>
+                </Element>
+
+                <Element cardinality="1..n">
+                    <Term>cac:TenderingCriterionProperty</Term>
+                    <Name>Tendering criterion property</Name>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:ID</Term>
+                        <Name>Criteria property id</Name>
+                        <Description>Criterion property identifier, to be referenced in the response. Use UUID from the Crtierion Taxonomy</Description>
+                        <Value type="EXAMPLE">9052cc59-cfe5-41c6-a314-02a7f378ffe8</Value>
+                    </Element>
+
+
+                    <Element cardinality="1..n">
+                        <Term>cac:TemplateEvidence</Term>
+                        <Name>TemplateEvidence</Name>
+
+                        <Element>
+                            <Term>cbc:ID</Term>
+                            <Name>Evidence identifier</Name>
+                            <Value type="EXAMPLE">E1</Value>
+                        </Element>
+
+                        <Element>
+                            <Term>cbc:EvidenceTypeCode</Term>
+                            <Name>Evidence type code</Name>
+                            <Description>The type of evidence requested</Description>
+                            <Value type="EXAMPLE">Skatteattest</Value>
+                        </Element>
+
+                    </Element>
+                </Element>
+
+            </Element>
+
+        </Element>
 
     </Document>
 </Structure>

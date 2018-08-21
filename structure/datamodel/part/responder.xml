@@ -47,11 +47,11 @@
                         <Name>Responder party identifier</Name>
                         <Description>Valid organizational number for the responding party</Description>
                         
-                        <Attribute>
+                        <Attribute usage="optional">
                             <Term>schemeID</Term>
                             <Name>Identifier qualifier</Name>
                             <Reference type="CODE_LIST">ICD</Reference>
-                            <Value type="FIXED">NO:ORGNR</Value>
+                            <Value type="FIXED">0192</Value>
                         </Attribute>
                         
                         <Value type="EXAMPLE">998877654</Value>

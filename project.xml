@@ -10,7 +10,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/datamodel/get-evidence-request.xml</Path>
-        <Title>Get Evidence request</Title>
+        <Title>EHF Get Evidence request</Title>
     </Resource>
 
 
@@ -18,9 +18,15 @@
 
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/example/example-get-evidence-request.xml</Path>
-        <Title>Example file for Get Evidence Request</Title>
-        <Property key="download">example-get-evidence-request.xml</Property>
+        <Path>rules/example/full-example.xml</Path>
+        <Title>Example file for Get Evidence Request, containing all elements and attributes</Title>
+        <Property key="download">full-example.xml</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/example/minimum-example.xml</Path>
+        <Title>Example file for Get Evidence Request, containting only mandatory elements and attributes</Title>
+        <Property key="download">minimum-example.xml</Property>
     </Resource>
     
     

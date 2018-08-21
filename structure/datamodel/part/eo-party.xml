@@ -16,11 +16,11 @@
             <Name>Economic operator Party identifier</Name>
             <Description>Valid organizational number for the party whom the evidence is requested</Description>
 
-            <Attribute>
+            <Attribute usage="optional">
                 <Term>schemeID</Term>
                 <Name>Identifier qualifier</Name>
                 <Reference type="CODE_LIST">ICD</Reference>
-                <Value type="FIXED">NO:ORGNR</Value>
+                <Value type="FIXED">0192</Value>
             </Attribute>
 
             <Value type="EXAMPLE">999999956</Value>

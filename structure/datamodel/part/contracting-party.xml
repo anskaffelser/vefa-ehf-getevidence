@@ -12,7 +12,7 @@
     <Element>
         <Term>cbc:EndpointID</Term>
         <Name>Contracting party electronic address</Name>
-        <Description></Description>
+        <Description>The electronic address for the contracting authority</Description>
         <Attribute>
             <Term>schemeID</Term>
             <Name>Identifier qualifier</Name>
