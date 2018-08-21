@@ -13,16 +13,6 @@
         <Title>Get Evidence request</Title>
     </Resource>
 
-   
-
-    <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/cac.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>Namespace-1</Type>
-        <Path>structure/namespace/cbc.xml</Path>
-    </Resource>
 
     <!-- Files -->
 
@@ -33,11 +23,5 @@
         <Property key="download">example-get-evidence-request.xml</Property>
     </Resource>
     
-    <Resource>
-        <Type>native:File</Type>
-        <Path>xsd/GetEvidenceRequest.xsd</Path>
-        <Title>XML Schema for Get Evidence Request</Title>
-        <Property key="download">GetEvidenceRequest.xsd</Property>
-    </Resource>
-
+    
 </Project>

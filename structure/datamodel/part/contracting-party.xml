@@ -1,18 +1,21 @@
 <Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-    <Term>cac:RequestorParty</Term>
-    <Name>Requestor party</Name>
+    <Term>cac:ContractingParty</Term>
+    <Name>Contracting party</Name>
     <Description>The party requesting the evidence, normally the contracting authority in a procurement procedure</Description>
     
 <!--    <Property key="doc">structure/docs/contracting-party.adoc</Property>-->
     
     <Element>
-        <Term> cbc:EndpointID</Term>
-        <Name>Requestor electronic address</Name>
+        <Term>cac:Party</Term>
+        <Name>Party information</Name>
+        
+    <Element>
+        <Term>cbc:EndpointID</Term>
+        <Name>Contracting party electronic address</Name>
         <Description></Description>
         <Attribute>
             <Term>schemeID</Term>
             <Name>Identifier qualifier</Name>
-            <Reference type="CODE_LIST">ICD</Reference>
             <Value type="FIXED">NO:ORGNR</Value>
         </Attribute>
         <Value type="EXAMPLE">991825827</Value>
@@ -21,18 +24,18 @@
 
         <Element>
             <Term>cac:PartyIdentification</Term>
-            <Name>Party identifier</Name>
+            <Name>Party identification</Name>
 
             <Element>
                 <Term>cbc:ID</Term>
-                <Name>Requestor identifier</Name>
-                <Description>The identifier of the requesting party, as it is legally registered</Description>
+                <Name>Contracting party identifier</Name>
+                <Description>The identifier of the contracting party, as it is legally registered</Description>
 
-                <Attribute>
+                <Attribute usage="optional">
                     <Term>schemeID</Term>
                     <Name>Identifier qualifier</Name>
                     <Reference type="CODE_LIST">ICD</Reference>
-                    <Value type="FIXED">NO:ORGNR</Value>
+                    <Value type="FIXED">0192</Value>
                 </Attribute>
 
                 <Value type="EXAMPLE">991825827</Value>
@@ -45,14 +48,14 @@
 
             <Element>
                 <Term>cbc:Name</Term>
-                <Name>Requestor name</Name>
-                <Description>The name of the requestor</Description>
+                <Name>Contracting party name</Name>
+                <Description>The name of the contracting authority</Description>
                 <Value type="EXAMPLE">Difi</Value>
             </Element>
         </Element>
 
   
-
+    </Element>
 
     </Element>
 
