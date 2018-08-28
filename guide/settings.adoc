@@ -6,6 +6,10 @@
 // Folders
 :rules-dir: /tmp/rules
 
+//Internal
+
+:link-codelist: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/codelist/[Code list section]
+
 // Difi
 :link-github: https://github.com/difi/vefa-ehf-getevidence
 :link-issues: https://github.com/difi/vefa-ehf-getevidence/issues
