@@ -12,6 +12,11 @@
         <Path>structure/datamodel/get-evidence-request.xml</Path>
         <Title>EHF Get Evidence request</Title>
     </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/datamodel/get-evidence-response.xml</Path>
+        <Title>EHF Get Evidence response</Title>
+    </Resource>
 
 
     <!-- Files -->
