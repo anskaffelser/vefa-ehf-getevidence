@@ -29,5 +29,19 @@
         <Property key="download">minimum-example.xml</Property>
     </Resource>
     
+<!--    Code lists-->
+    
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ISO4217_2015.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ICD.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/TrueFalse.xml</Path>
+    </Resource>
     
 </Project>

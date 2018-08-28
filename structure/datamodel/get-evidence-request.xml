@@ -47,7 +47,7 @@
         <Element>
             <Term>cbc:ContractFolderID</Term>
             <Name>Ted/Doffin reference</Name>
-            <Description>Ted or Doffin referense number</Description>
+            <Description>Ted or Doffin reference number</Description>
             <Value type="EXAMPLE">18/00001</Value>
         </Element>
 
@@ -120,7 +120,7 @@
                             <Term>cbc:EvidenceTypeCode</Term>
                             <Name>Evidence type code</Name>
                             <Description>The type of evidence requested</Description>
-                            <Value type="EXAMPLE">Skatteattest</Value>
+                            <Value type="EXAMPLE">SKATTEATTEST</Value>
                         </Element>
 
                     </Element>
