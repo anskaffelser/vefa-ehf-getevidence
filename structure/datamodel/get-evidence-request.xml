@@ -20,11 +20,12 @@
         <Name>EHF Get Evidence Request document</Name>
 
         <Include>part/responder.xml</Include>
-
+        <Include>part/header.xml</Include>
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Customization Identifier</Name>
             <Description>Identifies a user-defined customization of UBL for a specific use.</Description>
+            <DataType>Identifier</DataType>
             <Value type="FIXED">urn:fdc:difi.no:2017:ehf:getevidence:1.0</Value>
         </Element>
 
@@ -32,6 +33,7 @@
             <Term>cbc:ProfileID</Term>
             <Name>Profile Identifier</Name>
             <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the invoice in an appropriate way.</Description>
+            <DataType>Identifier</DataType>
             <Value type="FIXED">urn:fdc:difi.no:2017:ehf:profile:01:1.0</Value>
         </Element>
 
@@ -41,6 +43,7 @@
             <Name>Document identifier</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. 
                 The identification may include the version of the specification as well as any customizations applied. Use UUID (universally unique identifier), version 4</Description>
+            <DataType>Identifier</DataType>
             <Value type="EXAMPLE">8a6e9c28-628d-4e64-8a1a-367c8973ff2a</Value>
         </Element>
 
@@ -48,13 +51,23 @@
             <Term>cbc:ContractFolderID</Term>
             <Name>Ted/Doffin reference</Name>
             <Description>Ted or Doffin reference number</Description>
+            <DataType>Identifier</DataType>
+            <Attribute>
+                <Term>schemeID</Term>
+                <Name>Scheme identifier</Name>
+                <Description>Scheme identifier, allowed values are TED of Doffin</Description>
+                <Reference type="CODE_LIST">DocRefContentType</Reference>
+                <Value type="EXAMPLE">NGOJ</Value>
+            </Attribute>
             <Value type="EXAMPLE">18/00001</Value>
+         
         </Element>
 
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Issue date</Name>
             <Description>The date, assigned by the sender, on which this document was issued. Must not include timezone information. Format YYYY-MM-DD</Description>
+            <DataType>Date</DataType>
             <Value type="EXAMPLE">2017-12-26</Value>
         </Element>
 
@@ -72,16 +85,11 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Criterion ID</Name>
-                <Description>Criterion identifier, to be referenced in the response. Use UUID from the Crtierion Taxonomy</Description>
+                <Description>Criterion identifier, to be referenced in the response. Use UUID from the Critierion Taxonomy</Description>
+                <DataType>Identifier</DataType>
                 <Value type="EXAMPLE">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</Value>
             </Element>
 
-            <Element>
-                <Term>cbc:CriterionType</Term>
-                <Name>Criterion Type</Name>
-                <Description>Criterion type code, from the Criterion Taxonomy</Description>
-                <Value type="EXAMPLE">CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</Value>
-            </Element>
 
             <Element cardinality="1..n">
                 <Term>cac:TenderingCriterionPropertyGroup</Term>
@@ -90,7 +98,8 @@
                 <Element cardinality="0..1">
                     <Term>cbc:ID</Term>
                     <Name>Criteria property group id</Name>
-                    <Description>Criterion group identifier, to be referenced in the response. Use UUID from the Crtierion Taxonomy</Description>
+                    <Description>Criterion group identifier, to be referenced in the response. Use UUID from the Critierion Taxonomy</Description>
+                    <DataType>Identifier</DataType>
                     <Value type="EXAMPLE">098fd3cc-466e-4233-af1a-affe09471bce</Value>
                 </Element>
 
@@ -101,7 +110,8 @@
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
                         <Name>Criteria property id</Name>
-                        <Description>Criterion property identifier, to be referenced in the response. Use UUID from the Crtierion Taxonomy</Description>
+                        <Description>Criterion property identifier, to be referenced in the response. Use UUID from the Critierion Taxonomy</Description>
+                        <DataType>Identifier</DataType>
                         <Value type="EXAMPLE">9052cc59-cfe5-41c6-a314-02a7f378ffe8</Value>
                     </Element>
 
@@ -111,15 +121,10 @@
                         <Name>TemplateEvidence</Name>
 
                         <Element>
-                            <Term>cbc:ID</Term>
-                            <Name>Evidence identifier</Name>
-                            <Value type="EXAMPLE">E1</Value>
-                        </Element>
-
-                        <Element>
                             <Term>cbc:EvidenceTypeCode</Term>
                             <Name>Evidence type code</Name>
                             <Description>The type of evidence requested</Description>
+                            <DataType>Code</DataType>
                             <Value type="EXAMPLE">SKATTEATTEST</Value>
                         </Element>
 

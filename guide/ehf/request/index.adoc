@@ -1,14 +1,11 @@
 
 = Get Evidence Request and Response
 
-#New model must be added#
-
-.Information model of the EHF GetEvidence messages
-image::images/response-model.png[align="left"]
-
-As seen in the model, one request or response is for one Economic Operator, but for this one economic operator, several different supporting documents are supported. There is also a possibility that some of the supporting documents can be sent as structured information in the Response-class.
-
+One request or response is for one Economic Operator, but for this one economic operator, several different evidences are supported. One request document will result in one response document, containing all the evidence requested. This means that if a request is sent asking for one evidence which is open and one that requires separate consent, no response message is sent before both evidences are ready. In such cases, you can chose to split the request into several request documents, to get the open evidences as soon as possible.
 
 == Syntax mapping and detailed information content
 
-Detailed descriptions, use of code lists, attributes, fixed values etc. are found in the {link-request-structure} and {link-response-structure}.
+Detailed descriptions, use of code lists, attributes, fixed values etc. are found in
+
+* {link-request-structure} and
+* {link-response-structure}.

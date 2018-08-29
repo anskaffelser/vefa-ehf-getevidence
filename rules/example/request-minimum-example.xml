@@ -24,7 +24,7 @@
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:getevidence:1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:01:1.0</cbc:ProfileID>
     <cbc:ID>8a6e9c28-628d-4e64-8a1a-367c8973ff2a</cbc:ID>
-    <cbc:ContractFolderID>18/00001</cbc:ContractFolderID>
+    <cbc:ContractFolderID schemeID="NGOJ">18/00001</cbc:ContractFolderID>
     <cbc:IssueDate>2018-08-21</cbc:IssueDate>
     <cac:ContractingParty>
         <cac:Party>
@@ -44,11 +44,9 @@
     </cac:EconomicOperatorParty>
     <cac:TenderingCriterion>
         <cbc:ID>b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</cbc:ID>
-        <cbc:CriterionTypeCode>CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</cbc:CriterionTypeCode>
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
                 <cac:TemplateEvidence>
-                    <cbc:ID>E1</cbc:ID>
                     <cbc:EvidenceTypeCode>SKATTEATTEST</cbc:EvidenceTypeCode>
                 </cac:TemplateEvidence>
             </cac:TenderingCriterionProperty>

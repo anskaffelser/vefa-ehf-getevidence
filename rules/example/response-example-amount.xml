@@ -23,7 +23,7 @@
     <cbc:CustomizationID>urn:fdc:difi.no:2017:ehf:getevidence:1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:difi.no:2017:ehf:profile:01:1.</cbc:ProfileID>
     <cbc:ID>88a2cebf-9b7b-4f13-8490-e615fea498b8</cbc:ID>
-    <cbc:ContractFolderID>18/0001</cbc:ContractFolderID>
+    <cbc:ContractFolderID schemeID="NGOJ">18/0001</cbc:ContractFolderID>
     <cbc:IssueDate>2018-08-27</cbc:IssueDate>
     <cac:ContractingParty>
         <cac:Party>
@@ -51,6 +51,10 @@
         <cac:ResponseValue>
             <cbc:ResponseAmount currencyID="NOK">23000000</cbc:ResponseAmount>
         </cac:ResponseValue>
+        <cac:ApplicablePeriod>
+            <cbc:StartDate>2018-08-27</cbc:StartDate>
+            <cbc:EndDate>2018-09-27</cbc:EndDate>
+        </cac:ApplicablePeriod>
     </cac:TenderingCriterionResponse>
     <cac:AdditionalDocumentReference>
         <cbc:ID>8a6e9c28-628d-4e64-8a1a-367c8973ff2a</cbc:ID>

@@ -39,6 +39,12 @@
         <Title>Response example for amount as evidence</Title>
         <Property key="download">response-example-amount.xml</Property>
     </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/example/response-example-attachment.xml</Path>
+        <Title>Response example for amount as evidence</Title>
+        <Property key="download">response-example-attachment.xml</Property>
+    </Resource>
     
 <!--    Code lists-->
     
@@ -53,6 +59,10 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/TrueFalse.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/DocRefContentType.xml</Path>
     </Resource>
     
 </Project>

@@ -11,12 +11,14 @@
             <Term>cbc:ID</Term>
             <Name>Extension identifier</Name>
             <Value type="FIXED">urn:fdc:difi.no:2017:vefa:getevidence:Responder-1</Value>
+            <DataType>Identifier</DataType>
         </Element>
         
         <Element>
             <Term>cbc:Name</Term>
             <Name>Extension name</Name>
             <Value type="FIXED">Responder information</Value>
+            <DataType>Text</DataType>
         </Element>
         
         <Element>
@@ -31,6 +33,7 @@
                     <Term>resp:EndpointID</Term>
                     <Name>Responder party electronic address</Name>
                     <Description>The electronic address for the responder party</Description>
+                    <DataType>Identifier</DataType>
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Identifier qualifier</Name>
@@ -48,6 +51,7 @@
                         <Term>resp:ID</Term>
                         <Name>Responder party identifier</Name>
                         <Description>Valid organizational number for the responding party</Description>
+                        <DataType>Identifier</DataType>
                         
                         <Attribute usage="optional">
                             <Term>schemeID</Term>
@@ -68,6 +72,7 @@
                         <Term>resp:Name</Term>
                         <Name>Responding party name</Name>
                         <Description>The name of the responding</Description>
+                        <DataType>Text</DataType>
                         
                         <Value type="FIXED">Altinn</Value>
                     </Element>
