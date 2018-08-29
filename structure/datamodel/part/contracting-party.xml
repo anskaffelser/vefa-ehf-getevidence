@@ -2,6 +2,7 @@
     <Term>cac:ContractingParty</Term>
     <Name>Contracting party</Name>
     <Description>The party requesting the evidence, normally the contracting authority in a procurement procedure</Description>
+    <Property key="doc">structure/docs/ca.adoc</Property>
     
 <!--    <Property key="doc">structure/docs/contracting-party.adoc</Property>-->
     

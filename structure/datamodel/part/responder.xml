@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
     <Term>ext:UBLExtensions</Term>
+    <Property key="doc">structure/docs/responder.adoc</Property>
     
     <Element>
         <Term>ext:UBLExtension</Term>
-        <Property key="doc">structure/docs/responder.adoc</Property>
+       
         
         <Element>
             <Term>cbc:ID</Term>
