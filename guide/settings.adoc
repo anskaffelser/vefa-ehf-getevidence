@@ -5,6 +5,7 @@
 
 // Folders
 :rules-dir: /tmp/rules
+:snippet-dir: ../rules/snippets
 
 //Internal
 

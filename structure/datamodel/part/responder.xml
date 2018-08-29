@@ -4,6 +4,7 @@
     
     <Element>
         <Term>ext:UBLExtension</Term>
+        <Property key="doc">structure/docs/responder.adoc</Property>
         
         <Element>
             <Term>cbc:ID</Term>

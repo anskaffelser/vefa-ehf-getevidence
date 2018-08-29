@@ -6,7 +6,7 @@
     <Description>Document type used to request evidences.</Description>
 
     <Property key="sch:prefix">EHF-GetEvidence-REQ</Property>
-    <Property key="sch:identifier">getevidence-basic</Property>
+    <Property key="sch:identifier">req-basic</Property>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>

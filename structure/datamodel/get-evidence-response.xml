@@ -6,7 +6,7 @@
     <Description>Document type used to respond to a get evidence request</Description>
     
     <Property key="sch:prefix">EHF-GE-resp</Property>
-    <Property key="sch:identifier">GE-resp-basic</Property>
+    <Property key="sch:identifier">resp-basic</Property>
     
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
@@ -41,7 +41,7 @@
             <Name>Document identifier</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. 
                 The identification may include the version of the specification as well as any customizations applied. Use UUID (universally unique identifier), version 4</Description>
-            <Value type="EXAMPLE">8a6e9c28-628d-4e64-8a1a-367c8973ff2a</Value>
+            <Value type="EXAMPLE">88a2cebf-9b7b-4f13-8490-e615fea498b8</Value>
         </Element>
         
         <Element>
@@ -72,32 +72,25 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Criterion response ID</Name>
-                <Description>Criterion response identifier</Description>
-<!--               Sjekk eksempel verdi. UUID?-->
-                <Value type="EXAMPLE">resp1</Value>
-            </Element>
-            
-            <Element>
-                <Term>cbc:ValidatedCriterionPropertyID</Term>
-                <Name>Criterion identifier</Name>
-                <Description>This ID MUST point at one of the TenderingCriterionProperty/cbc:ID that were included in the Request document.</Description>
+                <Description>Identifier for the criterion as sent in the request Use UUID from the Crtierion Taxonomy</Description>
                 <Value type="EXAMPLE">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</Value>
             </Element>
             
-            <Element cardinality="1..n">
+            
+            <Element cardinality="0..n">
                 <Term>cac:ResponseValue</Term>
                 <Name>Tendering criterion property response value</Name>
                 
-                <Element cardinality="0..1">
+                <!--<Element cardinality="0..1">
                     <Term>cbc:ID</Term>
                     <Name>Criteria response value identifier</Name>
                     <Description>An identifier for this criterion response value. Use UUID from the Crtierion Taxonomy</Description>
                     <Value type="EXAMPLE">f3cb0abd-111f-46ad-882e-be833ecdefbd</Value>
-                </Element>
+                </Element>-->
                 
                 <Element cardinality="0..1">
                     <Term>cbc:Response</Term>
-                    <Name>Criteria response value identifier</Name>
+                    <Name>Criteria response string</Name>
                     <Description>Used if the response is a string</Description>
                     <Value type="EXAMPLE">test string</Value>
                 </Element>
@@ -193,6 +186,20 @@
             </Element>
             
         </Element>
+        
+        <Element>
+            <Term>cac:AdditionalDocumentReference</Term>
+            <Name>Reference to request document</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Use the same value as in the QualificationApplicationRequest/cbc:ID element</Name>
+                <Description>Identifies the request document this document is responding to</Description>
+                <Value type="EXAMPLE">8a6e9c28-628d-4e64-8a1a-367c8973ff2a</Value>
+            </Element>
+        </Element>
+        
+        
         
         <Element cardinality="0..1">
             <Term>cac:Evidence</Term>

@@ -23,15 +23,21 @@
 
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/example/full-example.xml</Path>
+        <Path>rules/example/request-full-example.xml</Path>
         <Title>Full example file for Get Evidence Request, containing all elements and attributes</Title>
-        <Property key="download">full-example.xml</Property>
+        <Property key="download">request-full-examplefull-example.xml</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/example/minimum-example.xml</Path>
+        <Path>rules/example/request-minimum-example.xml</Path>
         <Title>Minimum example file for Get Evidence Request, containting only mandatory elements and attributes</Title>
-        <Property key="download">minimum-example.xml</Property>
+        <Property key="download">request-minimum-example.xml</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/example/response-example-amount.xml</Path>
+        <Title>Response example for amount as evidence</Title>
+        <Property key="download"response-example-amount.xml</Property>
     </Resource>
     
 <!--    Code lists-->
