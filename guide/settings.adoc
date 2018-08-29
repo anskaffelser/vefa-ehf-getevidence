@@ -24,7 +24,7 @@
 :ISO8601:  https://www.iso.org/standard/40874.html[ISO 8601:2004]
 
 // External
-:link-directive: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0024&from=EN[eProcurement Directive(2014/24/EU)]
+:link-directive: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0024&from=EN[eProcurement Directive (2014/24/EU)]
 :link-cen-bii: http://www.cenbii.eu/
 :link-espd: https://espd.github.io/ESPD-EDM/v2.0.0/xml_guide.html[ESPD 2.x]
 :link-oasis-ubl: http://docs.oasis-open.org/ubl/csprd02-UBL-2.2/UBL-2.2.html
