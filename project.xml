@@ -37,7 +37,7 @@
         <Type>native:File</Type>
         <Path>rules/example/response-example-amount.xml</Path>
         <Title>Response example for amount as evidence</Title>
-        <Property key="download"response-example-amount.xml</Property>
+        <Property key="download">response-example-amount.xml</Property>
     </Resource>
     
 <!--    Code lists-->
