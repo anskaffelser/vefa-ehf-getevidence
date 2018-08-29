@@ -10,6 +10,7 @@
 //Internal
 
 :link-codelist: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/codelist/[Code list section]
+:codelist-ICD: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/codelist/ICD/[ICD list]
 
 // Difi
 :link-github: https://github.com/difi/vefa-ehf-getevidence
@@ -18,6 +19,10 @@
 
 :name-difi-en: Agency of Public Management and eGovernment
 :name-difi-no: Direktoratet for forvaltning og IKT
+
+//ISO:
+:ISO15000: https://www.iso.org/standard/61433.html[ISO 15000-5:2014]
+:ISO8601:  https://www.iso.org/standard/40874.html[ISO 8601:2004]
 
 // External
 :link-cen-bii: http://www.cenbii.eu/
