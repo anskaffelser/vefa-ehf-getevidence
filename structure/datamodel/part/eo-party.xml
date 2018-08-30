@@ -12,13 +12,13 @@
 
         <Element>
             <Term>cbc:ID</Term>
-            <Name>Economic operator Party identifier</Name>
+            <Name>Economic operator party identifier</Name>
             <Description>Valid organizational number for the party whom the evidence is requested</Description>
             <DataType>Identifier</DataType>
 
             <Attribute usage="optional">
                 <Term>schemeID</Term>
-                <Name>Identifier qualifier</Name>
+                <Name>Scheme identifier</Name>
                 <Reference type="CODE_LIST">ICD</Reference>
                 <Value type="FIXED">0192</Value>
             </Attribute>

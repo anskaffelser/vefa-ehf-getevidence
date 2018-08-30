@@ -17,8 +17,9 @@
         <DataType>Identifier</DataType>
         <Attribute>
             <Term>schemeID</Term>
-            <Name>Identifier qualifier</Name>
-            <Value type="FIXED">NO:ORGNR</Value>
+            <Name>Scheme identifier</Name>
+            <Description>The applicable codelist for this is not published yet, so code list or fixed values will be added later</Description>
+            <Value type="EXAMPLE">NO:ORGNR</Value>
         </Attribute>
         <Value type="EXAMPLE">991825827</Value>
         
@@ -36,7 +37,7 @@
 
                 <Attribute usage="optional">
                     <Term>schemeID</Term>
-                    <Name>Identifier qualifier</Name>
+                    <Name>Scheme identifier</Name>
                     <Reference type="CODE_LIST">ICD</Reference>
                     <Value type="FIXED">0192</Value>
                 </Attribute>

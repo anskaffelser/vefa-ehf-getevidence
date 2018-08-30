@@ -7,7 +7,7 @@ The scope of the first phase of this project is to request supporting documents 
 
 == Scope of this document
 
-This document explains and illustrates how to implement XML documents based on specific requirements in the Norwegian marked (EHF specific rules and restrictions). The GetEvidence data model is rich and flexible enough so as to allow use for contracts above and below threshold. However this document is oriented exclusively to illustrate how to request evidences for contracts above the threshold.
+This document explains and illustrates how to implement XML documents based on specific requirements in the Norwegian marked (EHF specific rules and restrictions). The GetEvidence data model is rich and flexible enough to allow use both for contracts above and below threshold. However this document is oriented exclusively to illustrate how to request evidences for contracts above the threshold.
 
 ===  Out-of-Scope
 

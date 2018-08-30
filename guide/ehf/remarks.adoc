@@ -3,7 +3,7 @@
 * Use cases
 * Kodelister
 * Bevis/dokument id - krav fra Altinn?
-* Applicable period - trengs det?
+
 * Knytning mot criteria taxonomy?
 * Feilmeldinger - normalt ikke brukt i EHF...
 * Vedlegg - i Asic? Base64

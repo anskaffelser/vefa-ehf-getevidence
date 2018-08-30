@@ -286,6 +286,7 @@
                                 <Term>mimeCode</Term>
                                 <Name>Attached document Mime code</Name>
                                 <Description>The mime code of the attached document.</Description>
+                                <Reference type="CODE_LIST">MimeCode</Reference>
                                 <Value type="EXAMPLE">text/csv</Value>
                             </Attribute>
                             

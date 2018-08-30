@@ -8,7 +8,7 @@ In this scenario, the economic operator has sent an ESPD Response as part of the
 
 In a restricted procedure the contracting authority will usually require submission of the supporting documents at the moment of selection of the candidates. There can also be other reasons why the contracting authority wants to check some or all of the supporting documents before the evaluation phase. See {link-directive}, Article 65, 59-4 and note 84.
 
-In this scenario, the economic operator has sent an ESPD Response as part of the tender documents or, and the contracting authority need to check if it already possesses some of the supporting documents. For the rest of the supporting documents, the contracting authority is obliged to get these from open databases if such exist, and then ask all the economic operators to provide the rest.
+In this scenario, the economic operator has sent an ESPD Response as part of the tender documents, and the contracting authority need to check if it already possesses some of the supporting documents. For the rest of the supporting documents, the contracting authority is obliged to get these from open databases if such exist, and then ask all the economic operators to provide the rest.
 
 = Use case 3 – Contract phase
 
