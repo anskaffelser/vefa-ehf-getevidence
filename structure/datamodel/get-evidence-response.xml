@@ -287,14 +287,14 @@
                                 <Name>Attached document Mime code</Name>
                                 <Description>The mime code of the attached document.</Description>
                                 <Reference type="CODE_LIST">MimeCode</Reference>
-                                <Value type="EXAMPLE">text/csv</Value>
+                                <Value type="EXAMPLE">application/pdf</Value>
                             </Attribute>
                             
                             <Attribute>
                                 <Term>filename</Term>
                                 <Name>Attached document Filename</Name>
                                 <Description>The file name of the attached document</Description>
-                                <Value type="EXAMPLE">Hours-spent.csv</Value>
+                                <Value type="EXAMPLE">attest.pdf</Value>
                                 
                             </Attribute>
                             
