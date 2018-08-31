@@ -1,6 +1,6 @@
 //
-:revision: 0.9.0
-:release: 2018.08.29
+:revision: 1.0.0
+:release: 2018.08.30
 
 // Folders
 :rules-dir: /tmp/rules

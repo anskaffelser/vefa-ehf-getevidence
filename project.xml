@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>EHF Get Evidence 0.9</Name>
+    <Name>EHF Get Evidence 1.0</Name>
 
     <Documentation path="ehf/">EHF Get Evidence documentation</Documentation>
 
