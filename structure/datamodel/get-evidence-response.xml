@@ -55,7 +55,7 @@
             <Attribute>
                 <Term>schemeID</Term>
                 <Name>Scheme identifier</Name>
-                <Description>Scheme identifier, allowed values are TED of Doffin</Description>
+                <Description>Scheme identifier, allowed values are TED_CN or NGOJ (Doffin)</Description>
                 <Reference type="CODE_LIST">DocRefContentType</Reference>
                 <Value type="EXAMPLE">NGOJ</Value>
             </Attribute>
