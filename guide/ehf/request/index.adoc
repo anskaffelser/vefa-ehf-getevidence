@@ -5,6 +5,14 @@ One request or response is for one Economic Operator, but for this one economic 
 
 == Syntax mapping and detailed information content
 
+GetEvidence data model is in this EHF bound to the {link-oasis-ubl} QualificationApplicationRequest and QualificationApplicationResponse document type. The target namespaces are:
+
+[horizontal]
+GetEvidence request::
+urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2
+GetEvidence response:: urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2
+
+
 Detailed descriptions, use of code lists, attributes, fixed values etc. are found in
 
 * {link-request-structure} and

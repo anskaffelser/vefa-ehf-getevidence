@@ -27,6 +27,6 @@
 :link-directive: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0024&from=EN[eProcurement Directive (2014/24/EU)]
 :link-cen-bii: http://www.cenbii.eu/
 :link-espd: https://espd.github.io/ESPD-EDM/v2.0.0/xml_guide.html[ESPD 2.x]
-:link-oasis-ubl: http://docs.oasis-open.org/ubl/csprd02-UBL-2.2/UBL-2.2.html
+:link-oasis-ubl: http://docs.oasis-open.org/ubl/os-UBL-2.2/UBL-2.2.html[UBL2.2]
 :link-request-structure: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/syntax/GetEvidenceRequest/tree/[GetEvidenceRequest structure]
 :link-response-structure: https://test-vefa.difi.no/ehf-pre/guide/getevidence/1.0/syntax/GetEvidenceResponse/tree/[GetEvidenceResponse structure]
