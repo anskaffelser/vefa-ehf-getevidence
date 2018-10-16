@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
+
+    <testfolder>unit-EHF</testfolder>
+
+    <configuration>
+        <identifier>ehf-ge-request-1.0</identifier>
+        <title>EHF GetEvidence request 1.0 </title>
+        <file source="sch/parts/EHF-GE-REQUEST.sch" path="xsl/EHF-GE-REQUEST.sch"  />
+    </configuration>
+    
+    
+    <configuration>
+        <identifier>ehf-ge-response-1.0</identifier>
+        <title>EHF GetEvidence response 1.0</title>
+        <file source="sch/parts/EHF-GE-RESPONSE.sch" path="xsl/EHF-GE-RESPONSE.sch"  />
+    </configuration>
+
+</buildConfigurations>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<QualificationApplicationRequest 
+<ge-req:QualificationApplicationRequest 
+    xmlns:ge-req ="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
     xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
-    xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1"
-    xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2">
+    xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
     
     <ext:UBLExtensions>
         <ext:UBLExtension>
             <cbc:ID>urn:fdc:difi.no:2017:vefa:getevidence:Responder-1</cbc:ID>
             <cbc:Name>Responder information</cbc:Name>
             <ext:ExtensionContent>
-                <resp:ResponderParty>
-                    <resp:EndpointID schemeID="NO:ORGNR">998877654</resp:EndpointID>
+                <resp:ResponderParty xmlns="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
+                    <resp:EndpointID schemeID="0192">999999956</resp:EndpointID>
                     <resp:PartyIdentification>
-                        <resp:ID schemeID="0192">998877654</resp:ID>
+                        <resp:ID schemeID="0192">999999956</resp:ID>
                     </resp:PartyIdentification>
                     <resp:PartyName>
                         <resp:Name>Altinn</resp:Name>
@@ -33,7 +33,7 @@
         <cac:Party>
             <cbc:EndpointID schemeID="0192">991825827</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0192">991825827</cbc:ID>
+                <cbc:ID schemeID="0088">991825827</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>Difi</cbc:Name>
@@ -57,9 +57,10 @@
         <cac:TenderingCriterionPropertyGroup>
             <cac:TenderingCriterionProperty>
                 <cac:TemplateEvidence>
+                    <cbc:ID>e1</cbc:ID>
                     <cbc:EvidenceTypeCode>SKATTEATTEST</cbc:EvidenceTypeCode>
                 </cac:TemplateEvidence>
             </cac:TenderingCriterionProperty>
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>
-</QualificationApplicationRequest>
+</ge-req:QualificationApplicationRequest>

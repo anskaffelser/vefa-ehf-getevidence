@@ -6,9 +6,9 @@
     <Description>Document type used to respond to a get evidence request</Description>
     
     <Property key="sch:prefix">EHF-GE-resp</Property>
-    <Property key="sch:identifier">resp-basic</Property>
+    <Property key="sch:identifier">response-basic</Property>
     
-    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2</Namespace>
+    <Namespace prefix="ge-resp">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
     <Namespace prefix="ext">urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2</Namespace>
@@ -16,7 +16,7 @@
     
     
     <Document>
-        <Term>ubl:QualificationApplicationResponse</Term>
+        <Term>ge-resp:QualificationApplicationResponse</Term>
         <Name>EHF Get Evidence Response document</Name>
         
         <Include>part/responder.xml</Include>
@@ -96,6 +96,15 @@
                 <Term>cac:ResponseValue</Term>
                 <Name>Tendering criterion property response value</Name>
                 
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Identifier for the response</Name>
+                    <Description>The identifier for this response, value must be the same as in the element Requested Evidence/Evidence identifier. 
+                        Note that several response values can refer to same evidence identifier.</Description>
+                    <DataType>Identifier</DataType>
+                    <Value type="EXAMPLE">e1</Value>
+                </Element>
+                
                 <Element cardinality="0..1">
                     <Term>cbc:Response</Term>
                     <Name>Criteria response string</Name>
@@ -103,6 +112,7 @@
                     <DataType>Text</DataType>
                     <Value type="EXAMPLE">test string</Value>
                 </Element>
+                
                 <Element cardinality="0..1">
                     <Term>cbc:ResponseAmount</Term>
                     <Name>Criteria response amount</Name>
@@ -123,7 +133,6 @@
                     <Name>Criteria response code</Name>
                     <Description>A code used as evidence</Description>
                     <DataType>Code</DataType>
-<!--                    Sjekk eksempel + legg til kodeliste-->
                     <Value type="EXAMPLE">A2</Value>
                 </Element>
                 
@@ -135,13 +144,7 @@
                     <Value type="EXAMPLE">2017-03-15</Value>
                 </Element>
                 
-                <Element cardinality="0..1">
-                    <Term>cbc:ResponseTime</Term>
-                    <Name>Criteria response time</Name>
-                    <Description>A time used as evidence. Format = "hh:mi:ss"</Description>
-                    <DataType>Time</DataType>
-                    <Value type="EXAMPLE">12:34:23</Value>
-                </Element>
+              
                 
                 <Element cardinality="0..1">
                     <Term>cbc:ResponseID</Term>
@@ -164,8 +167,16 @@
                     <Term>cbc:ResponseMeasure</Term>
                     <Name>Criteria response measure</Name>
                     <Description>A measure used as evidence.</Description>
+                   
+                    <Attribute>
+                        <Term>unitCode</Term>
+                        <Name>Response measure unit code</Name>
+                        <Description>The unit code used for the response measure</Description>
+                        <Value type="EXAMPLE">C62</Value>
+                    </Attribute>
                     
                     <Value type="EXAMPLE">123</Value>
+                    
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -175,12 +186,30 @@
                     <DataType>Numeric</DataType>
                     <Value type="EXAMPLE">32</Value>
                 </Element>
+                
                 <Element cardinality="0..1">
                     <Term>cbc:ResponseQuantity</Term>
                     <Name>Criteria response quantity</Name>
-                    <Description>A quantity used as evidence. Three different types of quantities can be provided. A quantity in a specific unit of measure, a non-negative integer to specify a year, and a generic quantity without any particular unit of measure.</Description>
+                    <Description>A quantity used as evidence. Three different types of quantities can be provided. 
+                        A quantity in a specific unit of measure, a non-negative integer to specify a year (unit code = 'ANN') , and a generic quantity without any particular unit of measure.</Description>
                     <DataType>Quantity</DataType>
+                    
+                    <Attribute usage="optional">
+                        <Term>unitCode</Term>
+                        <Name>Response quantity unit code</Name>
+                        <Description>The unit code used for the response measure</Description>
+                        <Value type="EXAMPLE">ANN</Value>
+                    </Attribute>
+                    
                     <Value type="EXAMPLE">987654321</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ResponseTime</Term>
+                    <Name>Criteria response time</Name>
+                    <Description>A time used as evidence. Format = "hh:mi:ss"</Description>
+                    <DataType>Time</DataType>
+                    <Value type="EXAMPLE">12:34:23</Value>
                 </Element>
                
             </Element>

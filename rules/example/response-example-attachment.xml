@@ -9,9 +9,9 @@
             <cbc:Name>Responder information</cbc:Name>
             <ext:ExtensionContent>
                 <resp:ResponderParty>
-                    <resp:EndpointID schemeID="NO:ORGNR">998877665</resp:EndpointID>
+                    <resp:EndpointID schemeID="0192">974760673</resp:EndpointID>
                     <resp:PartyIdentification>
-                        <resp:ID schemeID="0192">998877665</resp:ID>
+                        <resp:ID schemeID="0192">974760673</resp:ID>
                     </resp:PartyIdentification>
                     <resp:PartyName>
                         <resp:Name>Altinn</resp:Name>
@@ -27,7 +27,7 @@
     <cbc:IssueDate>2018-08-27</cbc:IssueDate>
     <cac:ContractingParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="NO:ORGNR">991825827</cbc:EndpointID>
+            <cbc:EndpointID schemeID="0192">991825827</cbc:EndpointID>
             <cac:PartyIdentification>
                 <cbc:ID schemeID="0192">991825827</cbc:ID>
             </cac:PartyIdentification>

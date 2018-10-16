@@ -18,6 +18,20 @@
         <Title>EHF Get Evidence response</Title>
     </Resource>
 
+    <!-- Rules -->
+    
+    <Resource>
+        <Identifier>common</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/common.sch</Path>
+        <Title>Common rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>empty-elements</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/parts/empty-elements.sch</Path>
+        <Title>Empty elements</Title>
+    </Resource>
 
     <!-- Files -->
 
@@ -25,7 +39,7 @@
         <Type>native:File</Type>
         <Path>rules/example/request-full-example.xml</Path>
         <Title>Full example file for Get Evidence Request, containing all elements and attributes</Title>
-        <Property key="download">request-full-examplefull-example.xml</Property>
+        <Property key="download">request-full-example.xml</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
@@ -42,8 +56,15 @@
     <Resource>
         <Type>native:File</Type>
         <Path>rules/example/response-example-attachment.xml</Path>
-        <Title>Response example for amount as evidence</Title>
+        <Title>Response example with attachment</Title>
         <Property key="download">response-example-attachment.xml</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>tools/xsd/Responder-1.0.xsd</Path>
+        <Title>XSD Schema for Responder 1.0</Title>
+        <Description>XSD Schema file for Responder provided by Difi.</Description>
+        <Property key="download">Responder-1.0.xsd</Property>
     </Resource>
     
 <!--    Code lists-->

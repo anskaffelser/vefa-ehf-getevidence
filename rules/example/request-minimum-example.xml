@@ -12,7 +12,7 @@
             <cbc:Name>Responder information</cbc:Name>
             <ext:ExtensionContent>
                 <resp:ResponderParty>
-                    <resp:EndpointID schemeID="NO:ORGNR">998877654</resp:EndpointID>
+                    <resp:EndpointID schemeID="0192">999999956</resp:EndpointID>
                     <resp:PartyIdentification>
                         <resp:ID>998877654</resp:ID>
                     </resp:PartyIdentification>

@@ -6,9 +6,9 @@
     <Description>Document type used to request evidences.</Description>
 
     <Property key="sch:prefix">EHF-GetEvidence-REQ</Property>
-    <Property key="sch:identifier">req-basic</Property>
+    <Property key="sch:identifier">request-basic</Property>
 
-    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2</Namespace>
+    <Namespace prefix="ge-req">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
     <Namespace prefix="ext">urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2</Namespace>
@@ -16,7 +16,7 @@
 
 
     <Document>
-        <Term>ubl:QualificationApplicationRequest</Term>
+        <Term>ge-req:QualificationApplicationRequest</Term>
         <Name>EHF Get Evidence Request document</Name>
 
         <Include>part/responder.xml</Include>
@@ -118,8 +118,15 @@
 
                     <Element cardinality="1..n">
                         <Term>cac:TemplateEvidence</Term>
-                        <Name>TemplateEvidence</Name>
+                        <Name>Requested evidence</Name>
 
+                        <Element>
+                            <Term>cbc:ID</Term>
+                            <Name>Evidence identifier</Name>
+                            <Description>The identifier of the evidence requested</Description>
+                            <DataType>Identifier</DataType>
+                            <Value type="EXAMPLE">e1</Value>
+                        </Element>
                         <Element>
                             <Term>cbc:EvidenceTypeCode</Term>
                             <Name>Evidence type code</Name>
