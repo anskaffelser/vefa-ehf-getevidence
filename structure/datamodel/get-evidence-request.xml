@@ -20,7 +20,7 @@
         <Name>EHF Get Evidence Request document</Name>
 
         <Include>part/responder.xml</Include>
-        <Include>part/header.xml</Include>
+   
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Customization Identifier</Name>
