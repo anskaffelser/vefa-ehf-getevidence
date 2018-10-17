@@ -14,22 +14,22 @@ services:
      - .:/src
      - ./target/site/files:/target
 
-#  schematron-response:
-#    image: "klakegg/schematron"
-#    command: prepare rules/sch/EHF-ESPD-RESPONSE.sch /target/EHF-ESPD-RESPONSE.sch
-#    volumes:
-#     - .:/src
-#     - ./target/site/files:/target
+  schematron-response:
+    image: "klakegg/schematron"
+    command: prepare rules/sch/EHF-ESPD-RESPONSE.sch /target/EHF-ESPD-RESPONSE.sch
+    volumes:
+     - .:/src
+     - ./target/site/files:/target
 
   structure:
-    image: "difi/vefa-structure:0.5"
+    image: "difi/vefa-structure:0.6.1"
     volumes:
      - .:/src
      - ./target:/target
 
   validator:
     image: "difi/vefa-validator"
-    command: build -x -t /src -t -target target/validator -n no.difi.ehf.espd
+    command: build -x -t /src -t -target target/validator -n no.difi.ehf.getevidence
     volumes:
      - .:/src
 

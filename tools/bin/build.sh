@@ -42,9 +42,9 @@ dc structure
 # dc schematron-response
 
 
-# info "Build and verify validation artifacts"
+info "Build and verify validation artifacts"
 
-# dc validator
+dc validator
 
 
 info "Generate Asciidoctor documents"

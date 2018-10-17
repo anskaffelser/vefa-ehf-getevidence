@@ -26,5 +26,4 @@
     <include href="parts/common.sch"/>
     <include href="../../target/generated/request-basic.sch"/>
 
-
 </schema>
