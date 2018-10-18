@@ -34,7 +34,7 @@
 				xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
 				
 				
-				<cbc:IssueDate>2017-01-01</cbc:IssueDate>
+				<cbc:IssueDate>2017-01-01Z</cbc:IssueDate>
 				<cac:TenderingCriterionResponse>
 					<cac:ApplicablePeriod>
 						<cbc:StartDate>2017</cbc:StartDate>

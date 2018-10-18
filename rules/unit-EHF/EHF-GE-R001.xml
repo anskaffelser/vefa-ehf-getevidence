@@ -14,7 +14,7 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
 			xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
-			
+
 			<cac:ContractingParty>
 				<cac:Party>
 					<cbc:EndpointID schemeID="0192">991825827</cbc:EndpointID>
@@ -26,7 +26,7 @@
 					</cac:PartyName>
 				</cac:Party>
 			</cac:ContractingParty>
-			
+
 		</QualificationApplicationRequest>
 	</test>
 	<test>
@@ -40,24 +40,66 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
 			xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
-			
+
 			<cac:ContractingParty>
 				<cac:Party>
-					<cac:PartyIdentification/>
-					
-					<cac:PartyName/>
-					
+					<cbc:EndpointID schemeID="0192"/>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0192"/>
+					</cac:PartyIdentification>
+					<cac:PartyName>
+						<cbc:Name/>
+					</cac:PartyName>
 				</cac:Party>
 			</cac:ContractingParty>
-			
-			<cac:TenderingCriterion>
-				<cbc:ID>b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</cbc:ID>
-				<cac:TenderingCriterionPropertyGroup/>
-					
-				
-			</cac:TenderingCriterion>
-			
 		</QualificationApplicationRequest>
 	</test>
-	
+	<test>
+		<assert>
+			<description>Trigger error when empty elements are present.</description>
+			<error>EHF-GE-R001</error>
+		</assert>
+		<QualificationApplicationRequest
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+			xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
+
+			<cbc:ID><!-- no content --></cbc:ID>
+
+		</QualificationApplicationRequest>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when element contains space.</description>
+			<error>EHF-GE-R001</error>
+		</assert>
+		<QualificationApplicationRequest
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+			xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
+
+			<cbc:ID> </cbc:ID>
+
+		</QualificationApplicationRequest>
+	</test>
+	<test>
+		<assert>
+			<description>Trigger error when element contains tab.</description>
+			<error>EHF-GE-R001</error>
+		</assert>
+		<QualificationApplicationRequest
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+			xmlns:resp="urn:fdc:difi.no:2017:vefa:getevidence:Responder-1">
+
+			<cbc:ID>	</cbc:ID>
+
+		</QualificationApplicationRequest>
+	</test>
 </testSet>

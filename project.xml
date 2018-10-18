@@ -89,5 +89,19 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/MimeCode.xml</Path>
     </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/EHF-GE-REQUEST.sch</Path>
+        <Title>Schematron for EHF Get Evidence Request</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">EHF-GE-REQUEST.sch</Property> 
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/EHF-GE-RESPONSE.sch</Path>
+        <Title>Schematron for EHF Get Evidence Response</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">EHF-GE-RESPONSE.sch</Property> 
+    </Resource>
     
 </Project>
