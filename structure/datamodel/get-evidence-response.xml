@@ -83,7 +83,7 @@
             <Property key="doc">structure/docs/response.adoc</Property>
             
             
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
                 <Name>Criterion response ID</Name>
                 <Description>Identifier for the criterion as sent in the request. Use UUID from the Critierion Taxonomy</Description>
@@ -282,10 +282,11 @@
                 <Value type="EXAMPLE">e1</Value>
             </Element>
             
-            <Element>
+            <Element cardinality="0..1">
                 <Term>cbc:EvidenceTypeCode</Term>
                 <Name>Evidence type code</Name>
-                <Description>The type of evidence in this response</Description>
+                <Description>The type of evidence in this response. 
+                    If used, this code must correspond to the requested evidence code sent in the GetEvidence request in the Requested Evidence/Evidence type code. The code list is not yet available, will be published when list is ready.</Description>
                 <DataType>Code</DataType>
                 <Value type="EXAMPLE">SKATTEATTEST</Value>
             </Element>

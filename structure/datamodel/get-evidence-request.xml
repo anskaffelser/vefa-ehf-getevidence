@@ -130,7 +130,7 @@
                         <Element>
                             <Term>cbc:EvidenceTypeCode</Term>
                             <Name>Evidence type code</Name>
-                            <Description>The type of evidence requested</Description>
+                            <Description>The code of evidence requested. The code list is not yet available, will be published when list is ready.</Description>
                             <DataType>Code</DataType>
                             <Value type="EXAMPLE">SKATTEATTEST</Value>
                         </Element>
