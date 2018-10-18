@@ -72,8 +72,8 @@
 	</test>
 	<test>
 		<assert>
-			<description>Trigger error when element contains space.</description>
-			<error>EHF-GE-R001</error>
+			<description>Don't trigger error when element contains space.</description>
+			<success>EHF-GE-R001</success>
 		</assert>
 		<QualificationApplicationRequest
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
@@ -88,8 +88,8 @@
 	</test>
 	<test>
 		<assert>
-			<description>Trigger error when element contains tab.</description>
-			<error>EHF-GE-R001</error>
+			<description>Don't trigger error when element contains tab.</description>
+			<success>EHF-GE-R001</success>
 		</assert>
 		<QualificationApplicationRequest
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2"
